@@ -6,7 +6,7 @@ const httpServer = createServer();
 
 const socket = new Server(httpServer, {
     cors: {
-        origin: "http://localhost:5500",
+        origin: ["http://127.0.0.1:5500", "http://localhost:5500"],
     }
 });
 
@@ -17,7 +17,7 @@ socket.on("connection", (socket) => {
    
 }   );
 
-httpServer.listen(4000, () => {
-    console.log("Server is running on port 4000");
+httpServer.listen(3000, () => {
+    console.log("Server is running on port 3000");
 }
 );
