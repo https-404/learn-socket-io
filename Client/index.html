@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Socket-Io Integration</title>
+    <title>Socket.IO Integration</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Socket-Io Integration</h1>
+    <div class="container">
+      <h1>🔌 Socket.IO Connection Status</h1>
+      <div id="statusBox" class="status-box">
+        Waiting for connection...
+      </div>
+    </div>
+
     <script
       src="https://cdn.socket.io/4.8.1/socket.io.min.js"
       integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
       crossorigin="anonymous"
     ></script>
-    <script src = 'index.js'></script>
+    <script src="./index.js"></script>
   </body>
 </html>
